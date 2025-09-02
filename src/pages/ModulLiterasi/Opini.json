@@ -1,0 +1,201 @@
+{
+  "title": "Opini Publik",
+  "learning_objectives": [
+    "Mahasiswa dapat memahami struktur dan ciri khas opini publik",
+    "Mahasiswa mampu membedakan fakta, opini, dan bias dalam teks",
+    "Mahasiswa dapat menyampaikan pendapat logis secara terbuka terhadap isu sosial"
+  ],
+  "texts": [
+    {
+      "title": "Fenomena Begal di Papua Barat Daya: Ketegasan Hukum atau Pembinaan Sosial?",
+      "paragraphs": [
+        "Dalam beberapa bulan terakhir, kasus begal di Papua Barat Daya meningkat, terutama di daerah Sorong dan sekitarnya. Aksi ini dilakukan bukan hanya oleh orang dewasa, tetapi juga remaja usia sekolah. Fenomena ini membuat masyarakat merasa tidak aman bahkan di siang hari.",
+        "Banyak pihak mendesak aparat penegak hukum untuk bertindak tegas. Pelaku begal harus dihukum berat agar memberikan efek jera. Ketegasan ini penting untuk menunjukkan bahwa negara hadir dalam menjamin rasa aman.",
+        "Namun, sebagian ahli berpendapat bahwa penanganan kasus begal tidak cukup hanya dengan hukuman. Sebagian pelaku adalah remaja putus sekolah, hidup dalam lingkungan miskin, tanpa akses pendidikan dan pekerjaan. Oleh karena itu, pembinaan sosial dan pencegahan berbasis keluarga dan sekolah juga harus diperkuat.",
+        "Pemerintah seharusnya tidak terjebak pada pendekatan hukum semata. Pencegahan jangka panjang perlu dilakukan dengan memperbaiki sistem pendidikan, menciptakan ruang kreativitas, dan memberikan akses kerja bagi anak muda. Masalah ini kompleks, dan hanya bisa diselesaikan dengan pendekatan yang menyeluruh."
+      ]
+    },
+    {
+      "title": "Kecerdasan Buatan dan Masa Depan Pendidikan: Harus Dikhawatirkan atau Dimanfaatkan?",
+      "paragraphs": [
+        "Munculnya berbagai platform berbasis kecerdasan buatan seperti ChatGPT telah mengubah cara mahasiswa dan dosen mengakses informasi, menyusun teks, bahkan menyelesaikan tugas. Sebagian orang menyambutnya sebagai terobosan teknologi, namun sebagian lagi menyatakan kekhawatiran bahwa AI akan menggerus orisinalitas dan semangat belajar.",
+        "Di satu sisi, AI memang bisa membantu proses belajar menjadi lebih efisien. Mahasiswa dapat mencari referensi lebih cepat, memahami konsep kompleks secara instan, dan memperluas wawasan di luar materi kelas. Guru juga dapat memanfaatkan AI untuk membuat materi ajar yang variatif dan interaktif.",
+        "Namun, jika tidak dikontrol, AI juga bisa mendorong plagiarisme, ketergantungan berlebihan, dan melemahkan daya pikir kritis. Mahasiswa bisa saja mengandalkan AI untuk menyelesaikan tugas tanpa memahami prosesnya. Ini akan merugikan pembelajaran jangka panjang.",
+        "Maka, dunia pendidikan perlu bersikap cerdas: bukan menolak AI, tapi membangun etika penggunaan yang sehat. Kampus harus membekali mahasiswa dengan pemahaman literasi digital, kemampuan berpikir kritis, dan kesadaran etis agar teknologi menjadi alat bantu, bukan pengganti manusia."
+      ]
+    }
+  ],
+  "circ_phases": {
+    "phase_1": {
+      "tasks": [
+        {
+          "question": "Pernahkah kamu atau orang di sekitarmu merasa tidak aman di jalan?",
+          "ideal_answer": "Ya, saya pernah merasa takut saat lewat jalan sepi malam hari"
+        },
+        {
+          "question": "Menurutmu, apakah anak muda yang jadi pelaku kekerasan harus dihukum berat?",
+          "ideal_answer": "Saya setuju jika pelaku dihukum, tapi pembinaan juga penting, terutama kalau pelakunya masih remaja"
+        }
+      ],
+      "tasks_text2": [
+        {
+          "question": "Pernahkah kamu menggunakan AI seperti ChatGPT untuk membantu tugas?",
+          "ideal_answer": "Ya, saya pernah gunakan untuk mencari ide menulis dan ringkasan"
+        },
+        {
+          "question": "Apa yang menurutmu paling menguntungkan dan paling mengkhawatirkan dari AI?",
+          "ideal_answer": "AI membantu cepat memahami topik, tapi juga bisa membuat kita malas berpikir"
+        }
+      ]
+    },
+    "phase_2": {
+      "instruction": "Tuliskan pernyataan opini utama dari setiap paragraf",
+      "ideal_answer_text1": "Paragraf 1: Kasus begal meningkat dan melibatkan remaja\nParagraf 2: Penegakan hukum harus tegas\nParagraf 3: Pembinaan sosial juga penting karena pelaku berasal dari latar miskin\nParagraf 4: Pencegahan jangka panjang perlu pendekatan sistemik",
+      "ideal_answer_text2": "Paragraf 1: Kehadiran AI menimbulkan pro dan kontra di dunia pendidikan\nParagraf 2: AI dapat mempercepat dan memperluas proses belajar\nParagraf 3: AI bisa membahayakan orisinalitas dan kritisisme\nParagraf 4: Solusi: edukasi etika & literasi digital"
+    },
+    "phase_3": {
+      "tasks": [
+        {
+          "question": "Siapa target pembaca dari opini ini?",
+          "ideal_answer": "Masyarakat umum dan pengambil kebijakan"
+        },
+        {
+          "question": "Apa argumen terkuat dan terlemah dari penulis?",
+          "ideal_answer": "Terkuat: perlunya pendekatan menyeluruh; Terlemah: tidak ada data statistik"
+        },
+        {
+          "question": "Adakah solusi konkret dalam opini ini?",
+          "ideal_answer": "Solusi: pembinaan sosial, ruang kreativitas, akses pendidikan dan kerja"
+        }
+      ],
+      "tasks_text2": [
+        {
+          "question": "Apakah teks ini berpihak?",
+          "ideal_answer": "Ya, berpihak pada pemanfaatan AI secara etis"
+        },
+        {
+          "question": "Apa argumen yang paling kuat dari penulis?",
+          "ideal_answer": "AI bisa jadi alat bantu efektif jika dikontrol dengan literasi digital"
+        },
+        {
+          "question": "Adakah saran konkret yang bisa diterapkan di kampus?",
+          "ideal_answer": "Kampus perlu mengajarkan etika dan kemampuan berpikir kritis"
+        }
+      ]
+    },
+    "phase_4": {
+      "tasks": [
+        {
+          "question": "Tulis tanggapan pribadi terhadap fenomena begal dan bagaimana seharusnya masyarakat dan pemerintah merespons.",
+          "ideal_answer": "Saya merasa fenomena begal ini mencerminkan masalah sosial yang lebih besar. Anak muda melakukan kekerasan karena tidak ada pilihan lain. Tapi tetap saja, keamanan masyarakat harus dijaga.\n\nSaya setuju jika pelaku dihukum, tapi yang lebih penting adalah mencegah supaya mereka tidak sampai terlibat dalam kekerasan. Pemerintah perlu masuk ke sekolah, keluarga, dan komunitas dengan program pembinaan."
+        }
+      ],
+      "tasks_text2": [
+        {
+          "question": "Tuliskan pendapatmu tentang penggunaan AI dalam perkuliahan. Apakah kamu mendukung, menolak, atau netral?",
+          "ideal_answer": "Saya mendukung penggunaan AI dalam perkuliahan asalkan tidak menjadi jalan pintas. AI bisa sangat membantu untuk brainstorming, membuat outline, atau menemukan ide. Tapi untuk menulis dan berpikir kritis, saya tetap percaya harus dari kita sendiri. Dosen juga perlu memberi batasan dan panduan agar mahasiswa tidak tergoda untuk copy-paste hasil AI tanpa pemahaman."
+        }
+      ]
+    },
+    "phase_5": {
+      "tasks": [
+        {
+          "instruction": "Unggah refleksi dan berikan tanggapan untuk teman",
+          "example_response": "Pendapat kamu bagus, Jefry. Saya juga setuju bahwa solusi tidak bisa hanya hukum. Kalau sekolah dan guru dilibatkan lebih aktif, anak muda bisa dialihkan ke kegiatan positif."
+        }
+      ],
+      "tasks_text2": [
+        {
+          "instruction": "Unggah refleksi dan berikan tanggapan untuk teman",
+          "example_response": "Setuju banget dengan kamu, Intan. Aku juga merasa AI membantu kalau kita tahu batasnya. Mungkin kita butuh pelatihan etika digital sejak awal kuliah."
+        }
+      ]
+    },
+    "phase_6": {
+      "tasks": [
+        {
+          "instruction": "Buat presentasi singkat berisi: Masalah, Sikap pribadi, Solusi",
+          "ideal_answer": {
+            "title": "Mengatasi Fenomena Begal di Indonesia",
+            "stance": "Perlu ketegasan hukum + pembinaan sosial", 
+            "arguments": "Pendekatan terpadu antara aparat, sekolah, dan komunitas"
+          }
+        }
+      ],
+      "tasks_text2": [
+        {
+          "instruction": "Susun presentasi 1 slide: Masalah, Sikap, Solusi",
+          "ideal_answer": {
+            "title": "Penggunaan AI dalam Pendidikan",
+            "stance": "Mendukung dengan batasan",
+            "arguments": "Literasi digital dan pedoman etika AI di kampus"
+          }
+        }
+      ]
+    }
+  },
+  "final_assessment": {
+    "multiple_choice": [
+      {
+        "question": "Jenis teks di atas termasuk...",
+        "options": ["Cerita pengalaman", "Eksposisi", "Opini publik", "Berita"],
+        "correct_answer": 2
+      },
+      {
+        "question": "Apa tujuan utama penulis?",
+        "options": ["Menggambarkan kekerasan", "Menyindir aparat", "Menyampaikan pendapat tentang solusi masalah sosial", "Menyampaikan keluhan pribadi"],
+        "correct_answer": 2
+      },
+      {
+        "question": "Solusi yang TIDAK disarankan oleh penulis:",
+        "options": ["Penegakan hukum", "Pembinaan keluarga", "Pendidikan karakter", "Penundaan proses hukum"],
+        "correct_answer": 3
+      }
+    ],
+    "multiple_choice_text2": [
+      {
+        "question": "Apa sikap penulis terhadap AI?",
+        "options": ["Menolak AI secara total", "Menerima tanpa syarat", "Mendukung dengan etika penggunaan", "Tidak berpihak"],
+        "correct_answer": 2
+      },
+      {
+        "question": "Risiko utama penggunaan AI menurut teks adalah...",
+        "options": ["Menurunnya produktivitas", "Melemahnya pemikiran kritis", "Kualitas teknologi buruk", "Mahal dan tidak bisa diakses"],
+        "correct_answer": 1
+      },
+      {
+        "question": "Solusi penulis dalam menghadapi perkembangan AI:",
+        "options": ["Larangan total penggunaannya", "Pelatihan teknis pemrograman", "Literasi digital dan kesadaran etis", "Mewajibkan semua kuliah berbasis AI"],
+        "correct_answer": 2
+      }
+    ],
+    "reflection_questions": [
+      {
+        "question": "Bagaimana pendapatmu tentang hubungan antara kejahatan dan kemiskinan?",
+        "ideal_answer": "Saya percaya bahwa banyak kejahatan terjadi karena tekanan ekonomi."
+      },
+      {
+        "question": "Apa peran pendidikan dalam mencegah kekerasan jalanan?",
+        "ideal_answer": "Pendidikan yang baik bisa membuka jalan keluar dari lingkaran kekerasan."
+      },
+      {
+        "question": "Jika kamu menjadi pemimpin daerah, program apa yang akan kamu lakukan?",
+        "ideal_answer": "Jika saya pemimpin, saya akan buka program pelatihan dan kerja untuk anak muda yang tidak sekolah."
+      }
+    ],
+    "reflection_questions_text2": [
+      {
+        "question": "Bagaimana kamu memposisikan diri sebagai mahasiswa dalam menghadapi teknologi AI?",
+        "ideal_answer": "Saya berusaha memanfaatkan AI sebagai alat bantu, bukan pengganti."
+      },
+      {
+        "question": "Apakah kampusmu sudah memberi bimbingan tentang etika penggunaan teknologi digital?",
+        "ideal_answer": "Kampus saya belum punya aturan yang jelas, jadi saya belajar dari diskusi teman dan dosen."
+      },
+      {
+        "question": "Menurutmu, seperti apa aturan yang adil dalam menggunakan AI dalam perkuliahan?",
+        "ideal_answer": "Menurut saya, aturan adil adalah yang membolehkan penggunaan AI untuk eksplorasi, tapi tidak untuk mengerjakan tugas secara otomatis tanpa pemahaman."
+      }
+    ]
+  }
+}

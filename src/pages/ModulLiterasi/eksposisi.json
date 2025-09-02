@@ -1,0 +1,232 @@
+{
+  "modul": "Eksposisi",
+  "teks": [
+    {
+      "id": 1,
+      "judul": "#SaveRajaAmpat: Menjaga Alam Papua dari Ancaman Penambangan",
+      "tujuan_pembelajaran": [
+        "Mahasiswa dapat mengidentifikasi struktur dan ciri teks eksposisi",
+        "Mahasiswa dapat menganalisis isi dan sudut pandang penulis",
+        "Mahasiswa dapat menyampaikan opini secara faktual dan terstruktur"
+      ],
+      "teks_bacaan": "Raja Ampat adalah salah satu kawasan laut dengan keanekaragaman hayati tertinggi di dunia. Keindahan terumbu karangnya telah menjadi daya tarik wisata yang mendunia. Namun, kawasan ini kini menghadapi ancaman serius akibat aktivitas penambangan nikel di sekitar wilayah tersebut.\n\nPenambangan nikel memang memberikan keuntungan ekonomi, namun juga membawa dampak buruk bagi lingkungan. Limbah tambang yang mencemari laut dapat merusak terumbu karang dan habitat biota laut. Selain itu, alih fungsi lahan menyebabkan hilangnya hutan dan mengganggu keseimbangan ekosistem.\n\nPenolakan terhadap aktivitas tambang datang dari masyarakat adat dan pegiat lingkungan. Mereka menilai bahwa eksploitasi sumber daya alam di kawasan konservasi merupakan pelanggaran terhadap hak lingkungan dan budaya lokal.\n\nOleh karena itu, semua pihak perlu mempertimbangkan ulang rencana penambangan di Raja Ampat. Pemerintah, masyarakat, dan pelaku usaha harus mencari solusi berkelanjutan yang tidak mengorbankan masa depan generasi mendatang.",
+      "pembelajaran_circ": {
+        "tahap_1_aktivasi_konteks": {
+          "tugas": [
+            "Lihat gambar Raja Ampat",
+            "Jawab 2 pertanyaan berikut:"
+          ],
+          "pertanyaan": [
+            "Apa yang kamu ketahui tentang Raja Ampat?",
+            "Apa yang kamu pikirkan saat mendengar kata \"penambangan\"?"
+          ],
+          "jawaban_ideal": [
+            "Raja Ampat terkenal dengan lautnya yang indah dan kaya terumbu karang.",
+            "Penambangan berarti mengambil sumber daya dari dalam bumi, tapi sering merusak lingkungan."
+          ]
+        },
+        "tahap_2_membaca_terpadu": {
+          "tugas": [
+            "Baca teks",
+            "Tuliskan ide pokok tiap paragraf"
+          ],
+          "jawaban_ideal": [
+            "Paragraf 1 → Raja Ampat terancam oleh aktivitas penambangan",
+            "Paragraf 2 → Dampak negatif penambangan terhadap lingkungan",
+            "Paragraf 3 → Penolakan dari masyarakat adat dan pegiat lingkungan",
+            "Paragraf 4 → Seruan untuk mencari solusi berkelanjutan"
+          ]
+        },
+        "tahap_3_tinjauan_kritis": {
+          "pertanyaan": [
+            "Apa sikap penulis terhadap penambangan di Raja Ampat?",
+            "Bukti apa yang digunakan penulis untuk mendukung pendapatnya?",
+            "Apa yang bisa ditambahkan agar teks lebih meyakinkan?"
+          ],
+          "jawaban_ideal": [
+            "Penulis menolak aktivitas tambang karena berisiko pada lingkungan dan budaya.",
+            "Penulis menyebut pencemaran laut, kerusakan terumbu karang, dan penolakan warga.",
+            "Penulis bisa menambahkan data angka kerusakan atau kutipan dari pakar."
+          ]
+        },
+        "tahap_4_komposisi_reflektif": {
+          "tugas": "Tulis tanggapanmu terhadap isu ini (2–3 paragraf)",
+          "jawaban_ideal": "Saya merasa prihatin dengan ancaman terhadap Raja Ampat. Lingkungan yang indah dan penting bagi masyarakat seharusnya dijaga, bukan dieksploitasi.\n\nSaya memahami bahwa tambang bisa memberikan penghasilan, tapi kerugian ekologisnya jauh lebih besar. Saya mendukung upaya masyarakat untuk menolak tambang dan mendesak pemerintah mencari solusi lain yang lebih ramah lingkungan."
+        },
+        "tahap_5_diskusi_kolaboratif": {
+          "tugas": [
+            "Unggah refleksi",
+            "Tanggapi 1 pendapat teman"
+          ],
+          "contoh_tanggapan": "Saya setuju dengan pendapat Andi bahwa kerusakan lingkungan tidak sebanding dengan keuntungan ekonomi. Kita memang perlu sumber daya, tapi harus ada batas agar alam tetap lestari."
+        },
+        "tahap_6_presentasi_kritis": {
+          "tugas": "Buat ringkasan isi, sikap, dan solusi dalam satu slide",
+          "jawaban_ideal": {
+            "ringkasan": "Raja Ampat terancam tambang; kerusakan lingkungan sangat besar",
+            "sikap": "Menolak penambangan di kawasan konservasi",
+            "solusi": "Lindungi alam lewat kebijakan lingkungan dan ekonomi alternatif"
+          }
+        }
+      },
+      "evaluasi": {
+        "pilihan_ganda": [
+          {
+            "id": 1,
+            "pertanyaan": "Tujuan teks eksposisi adalah...",
+            "pilihan": [
+              "Menghibur",
+              "Mengajak",
+              "Menjelaskan",
+              "Menceritakan"
+            ],
+            "jawaban_benar": 2
+          },
+          {
+            "id": 2,
+            "pertanyaan": "Paragraf ketiga mengandung opini tentang...",
+            "pilihan": [
+              "Penambangan",
+              "Kerusakan lingkungan",
+              "Penolakan masyarakat",
+              "Pemerintah"
+            ],
+            "jawaban_benar": 2
+          },
+          {
+            "id": 3,
+            "pertanyaan": "Ciri bahasa eksposisi:",
+            "pilihan": [
+              "Imajinatif",
+              "Persuasif",
+              "Objektif",
+              "Humor"
+            ],
+            "jawaban_benar": 2
+          }
+        ],
+        "refleksi": {
+          "pertanyaan": [
+            "Apa hal penting yang kamu pelajari dari isu ini?",
+            "Bagaimana strategi membaca ini membantumu berpikir kritis?"
+          ],
+          "contoh_jawaban": [
+            "Saya jadi tahu bahwa membaca eksposisi bukan hanya soal memahami isi, tapi juga menilai argumen.",
+            "Saya lebih peka terhadap sudut pandang penulis dan bukti yang digunakan. Ini membantu saya menulis lebih logis."
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "judul": "Meningkatkan Minat Baca Mahasiswa di Era Digital",
+      "tujuan_pembelajaran": [
+        "Mahasiswa mampu memahami struktur teks eksposisi",
+        "Mahasiswa mampu menganalisis isu minat baca dalam konteks digital",
+        "Mahasiswa mampu menyampaikan argumen dan solusi secara runtut"
+      ],
+      "teks_bacaan": "Di era digital, mahasiswa memiliki akses tak terbatas terhadap informasi. Namun, kemudahan ini tidak selalu dibarengi dengan peningkatan minat baca. Banyak mahasiswa yang lebih tertarik pada konten singkat seperti video pendek atau status media sosial daripada membaca artikel ilmiah atau buku.\n\nSalah satu penyebab rendahnya minat baca adalah kebiasaan membaca yang belum terbentuk sejak dini. Selain itu, tekanan akademik yang tinggi membuat sebagian mahasiswa merasa membaca bukanlah aktivitas yang menyenangkan, melainkan kewajiban semata.\n\nPadahal, kemampuan membaca yang baik sangat dibutuhkan untuk memahami materi kuliah, menulis tugas ilmiah, dan berpikir kritis. Mahasiswa yang memiliki minat baca tinggi cenderung lebih siap menghadapi tantangan akademik dan memiliki wawasan yang lebih luas.\n\nOleh karena itu, kampus perlu menciptakan lingkungan yang mendukung budaya membaca. Salah satunya adalah dengan menyediakan ruang baca yang nyaman, mengintegrasikan bahan bacaan kontekstual dalam pembelajaran, serta menggunakan teknologi untuk memperkaya pengalaman membaca.",
+      "pembelajaran_circ": {
+        "tahap_1_aktivasi_konteks": {
+          "pertanyaan": [
+            "Apa aktivitas yang paling sering kamu lakukan di HP dalam sehari?",
+            "Apa yang membuatmu tertarik atau tidak tertarik membaca teks panjang?"
+          ],
+          "jawaban_ideal": [
+            "Scroll media sosial, chat, nonton video",
+            "Tidak tertarik karena teks panjang terasa melelahkan; lebih suka informasi cepat"
+          ]
+        },
+        "tahap_2_membaca_terpadu": {
+          "tugas": "Tentukan ide pokok setiap paragraf",
+          "jawaban_ideal": [
+            "Paragraf 1 → Akses informasi tidak menjamin meningkatnya minat baca",
+            "Paragraf 2 → Penyebab rendahnya minat baca mahasiswa",
+            "Paragraf 3 → Pentingnya minat baca untuk keberhasilan akademik",
+            "Paragraf 4 → Peran kampus dalam meningkatkan budaya membaca"
+          ]
+        },
+        "tahap_3_tinjauan_kritis": {
+          "pertanyaan": [
+            "Apa opini utama penulis?",
+            "Adakah bias atau keberpihakan dalam teks?",
+            "Apakah solusi yang ditawarkan realistis?"
+          ],
+          "jawaban_ideal": [
+            "Penulis menilai rendahnya minat baca mahasiswa sebagai masalah serius yang harus ditangani",
+            "Teks berpihak pada pentingnya membaca, tapi tetap seimbang dengan fakta",
+            "Solusi realistis dan aplikatif di lingkungan kampus"
+          ]
+        },
+        "tahap_4_komposisi_reflektif": {
+          "tugas": "Tulis tanggapan 2–3 paragraf tentang bagaimana kamu menilai minat bacamu saat ini dan apa yang bisa kamu ubah.",
+          "jawaban_ideal": "Saya menyadari bahwa minat baca saya menurun sejak lebih sering menggunakan media sosial. Saya jarang menyelesaikan satu artikel penuh. Namun, saya ingin mulai membiasakan membaca 15 menit setiap hari. Menurut saya, membaca bukan hanya untuk kuliah, tetapi membentuk cara berpikir dan memperkaya sudut pandang saya."
+        },
+        "tahap_5_diskusi_kolaboratif": {
+          "tugas": [
+            "Unggah refleksi",
+            "Tanggapi 1 pendapat teman"
+          ],
+          "contoh_tanggapan": "Setuju dengan kamu, Dinda. Menambahkan bahan bacaan yang sesuai minat kita memang bisa meningkatkan motivasi. Mungkin juga perlu mulai dari bacaan ringan dulu agar tidak cepat bosan."
+        },
+        "tahap_6_presentasi_kritis": {
+          "tugas": "Buat ringkasan isi teks dan ajukan minimal 1 solusi nyata",
+          "jawaban_ideal": {
+            "ringkasan": "Mahasiswa kini kurang tertarik membaca karena budaya digital",
+            "solusi": "Perpustakaan digital interaktif & penguatan literasi dalam kuliah",
+            "sikap_pribadi": "Membaca harus jadi bagian dari gaya hidup intelektual"
+          }
+        }
+      },
+      "evaluasi": {
+        "pilihan_ganda": [
+          {
+            "id": 1,
+            "pertanyaan": "Apa tujuan utama penulis teks?",
+            "pilihan": [
+              "Memberi peringatan",
+              "Menyindir mahasiswa",
+              "Menjelaskan dan memberi solusi",
+              "Menghibur pembaca"
+            ],
+            "jawaban_benar": 2
+          },
+          {
+            "id": 2,
+            "pertanyaan": "Solusi apa yang diusulkan penulis?",
+            "pilihan": [
+              "Menambah tugas membaca",
+              "Membatasi gadget",
+              "Menghilangkan tekanan kuliah",
+              "Menyediakan ruang baca & bahan kontekstual"
+            ],
+            "jawaban_benar": 3
+          },
+          {
+            "id": 3,
+            "pertanyaan": "Mengapa minat baca penting bagi mahasiswa?",
+            "pilihan": [
+              "Agar lulus cepat",
+              "Untuk membentuk gaya belajar aktif",
+              "Agar tidak bosan",
+              "Untuk hiburan"
+            ],
+            "jawaban_benar": 1
+          }
+        ],
+        "refleksi": {
+          "pertanyaan": [
+            "Apa hal paling penting yang kamu pelajari dari teks ini?",
+            "Apakah kamu merasa strategi membaca berbasis 6 fase ini membantu pemahamanmu? Mengapa?",
+            "Setelah mengikuti modul ini, adakah kebiasaan membaca yang ingin kamu ubah atau tingkatkan?"
+          ],
+          "contoh_jawaban": [
+            "Saya belajar bahwa minat baca bukan hanya soal waktu, tapi soal kebiasaan dan prioritas.",
+            "Strategi 6 fase membuat saya tidak hanya membaca, tetapi juga menganalisis dan berdiskusi, jadi lebih paham isi dan sudut pandang teks.",
+            "Setelah mengikuti modul ini, saya ingin mulai menjadwalkan waktu khusus membaca dan mencoba membaca bahan di luar tugas kuliah agar wawasan saya lebih luas."
+          ]
+        }
+      }
+    }
+  ]
+}

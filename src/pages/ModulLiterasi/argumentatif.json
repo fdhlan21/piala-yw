@@ -1,0 +1,143 @@
+{
+  "id": "argumentasi_1",
+  "type": "argumentasi",
+  "title": "Program Makan Siang Bergizi Gratis di Sekolah Papua Perlu Dilanjutkan",
+  "learning_objectives": [
+    "Mahasiswa dapat mengidentifikasi struktur teks argumentatif",
+    "Mahasiswa dapat membedakan antara opini dan fakta",
+    "Mahasiswa dapat menyampaikan argumen secara logis dan meyakinkan"
+  ],
+  "text_content": {
+    "title": "Program Makan Siang Bergizi Gratis di Sekolah Papua Perlu Dilanjutkan",
+    "paragraphs": [
+      "Program makan siang gratis yang telah dijalankan di beberapa sekolah dasar di Papua memberikan dampak positif terhadap kehadiran dan konsentrasi belajar siswa. Anak-anak yang sebelumnya sering absen karena kurang gizi kini lebih aktif dan bersemangat di kelas. Hal ini membuktikan bahwa pemenuhan kebutuhan dasar sangat mempengaruhi kualitas pembelajaran.",
+      "Selain itu, program ini juga mendorong partisipasi orang tua dan komunitas lokal dalam menyiapkan makanan, sehingga membangun rasa kebersamaan dan kepedulian terhadap pendidikan anak. Dalam jangka panjang, program ini dapat menjadi strategi membangun ketahanan pangan berbasis sekolah.",
+      "Beberapa pihak memang mengkhawatirkan pemborosan anggaran. Namun, dibandingkan dengan biaya jangka panjang akibat rendahnya kualitas sumber daya manusia, investasi pada makan siang bergizi justru jauh lebih menguntungkan. Pendidikan tidak bisa dilepaskan dari kesehatan.",
+      "Maka dari itu, pemerintah daerah seharusnya tidak hanya mempertahankan, tetapi memperluas cakupan program ini ke seluruh wilayah Papua, dengan perencanaan dan pengawasan yang lebih baik."
+    ]
+  },
+  "circ_phases": {
+    "phase_1": {
+      "title": "Aktivasi Konteks",
+      "tasks": [
+        {
+          "question": "Apa yang kamu ketahui tentang program makan siang gratis di sekolah?",
+          "ideal_answer": "Program ini pernah dijalankan oleh pemerintah untuk mendukung siswa di wilayah 3T"
+        },
+        {
+          "question": "Menurutmu, apakah makan siang di sekolah mempengaruhi semangat belajar?",
+          "ideal_answer": "Iya, karena anak yang lapar sulit fokus; makanan bergizi sangat penting untuk daya pikir"
+        }
+      ]
+    },
+    "phase_2": {
+      "title": "Membaca Terpadu",
+      "tasks": [
+        {
+          "question": "Tentukan argumen utama di setiap paragraf",
+          "ideal_answers": [
+            "Paragraf 1: Makan siang bergizi meningkatkan kehadiran dan semangat belajar",
+            "Paragraf 2: Melibatkan orang tua dan membangun ketahanan pangan",
+            "Paragraf 3: Biaya program lebih kecil daripada dampak rendahnya kualitas SDM",
+            "Paragraf 4: Program perlu diperluas dan dikelola lebih baik"
+          ]
+        }
+      ]
+    },
+    "phase_3": {
+      "title": "Tinjauan Kritis",
+      "tasks": [
+        {
+          "question": "Apa pernyataan opini dan fakta dalam teks ini?",
+          "ideal_answer": "Fakta: kehadiran siswa meningkat; Opini: program harus diperluas"
+        },
+        {
+          "question": "Apakah argumen penulis didukung dengan logika yang jelas?",
+          "ideal_answer": "Ya, setiap pendapat disertai alasan kuat dan data realitas lapangan"
+        }
+      ]
+    },
+    "phase_4": {
+      "title": "Komposisi Reflektif",
+      "tasks": [
+        {
+          "question": "Tulis tanggapanmu 2-3 paragraf: apakah kamu mendukung program ini? Mengapa?",
+          "ideal_answer": "Saya sangat mendukung program makan siang gratis di Papua. Anak-anak yang belajar dalam kondisi lapar sulit memahami pelajaran. Dengan makan siang bergizi, mereka punya energi untuk belajar dan berkembang.\n\nSelain itu, program ini menyatukan sekolah dan masyarakat. Jika pengawasan ditingkatkan, maka tidak akan terjadi pemborosan. Ini bukan beban negara, tetapi investasi masa depan."
+        }
+      ]
+    },
+    "phase_5": {
+      "title": "Diskusi Kolaboratif",
+      "tasks": [
+        {
+          "instruction": "Unggah refleksi dan tanggapi minimal 1 pendapat teman",
+          "example_response": "Wah bagus sekali pendapatmu, Rika. Aku setuju bahwa keterlibatan orang tua itu penting. Mungkin program ini juga bisa melibatkan UMKM lokal agar lebih berdampak luas."
+        }
+      ]
+    },
+    "phase_6": {
+      "title": "Presentasi Kritis",
+      "tasks": [
+        {
+          "instruction": "Susun 3 poin utama dalam bentuk presentasi pendek (judul, sikap, argumen)",
+          "ideal_answer": {
+            "title": "Makan Siang untuk Masa Depan",
+            "stance": "Mendukung penuh",
+            "arguments": "Menambah semangat belajar, memperkuat gizi anak, investasi SDM Papua"
+          }
+        }
+      ]
+    }
+  },
+  "final_assessment": {
+    "multiple_choice": [
+      {
+        "question": "Tujuan teks argumentatif adalah...",
+        "options": [
+          "Menceritakan pengalaman",
+          "Menjelaskan proses",
+          "Menyampaikan pendapat disertai alasan",
+          "Menggambarkan tempat"
+        ],
+        "correct_answer": 2,
+        "explanation": "Teks argumentatif bertujuan menyampaikan pendapat disertai alasan"
+      },
+      {
+        "question": "Penulis menyebut program ini sebaiknya...",
+        "options": [
+          "Dihentikan",
+          "Dikaji ulang",
+          "Diperluas dengan pengawasan",
+          "Diserahkan ke sekolah"
+        ],
+        "correct_answer": 2,
+        "explanation": "Penulis mengusulkan program diperluas dengan pengawasan yang lebih baik"
+      },
+      {
+        "question": "Alasan ekonomi yang dipakai penulis adalah...",
+        "options": [
+          "Biaya makanan mahal",
+          "Mencegah pemborosan",
+          "Investasi lebih murah daripada dampak buruk SDM lemah",
+          "Banyak pengusaha makanan dirugikan"
+        ],
+        "correct_answer": 2,
+        "explanation": "Penulis berargumen bahwa investasi makan siang lebih murah daripada dampak buruk SDM lemah"
+      }
+    ],
+    "reflection_questions": [
+      {
+        "question": "Apa yang paling membuatmu tertarik dari teks ini?",
+        "ideal_answer": "Saya tertarik karena isu ini sangat nyata di daerah saya."
+      },
+      {
+        "question": "Bagaimana kamu menilai efektivitas argumen penulis?",
+        "ideal_answer": "Argumen penulis meyakinkan dan logis, tidak emosional."
+      },
+      {
+        "question": "Setelah membaca ini, apa pendapatmu tentang peran negara dalam mendukung pendidikan?",
+        "ideal_answer": "Saya jadi sadar bahwa kebijakan pendidikan tidak cukup hanya bicara kurikulum, tapi juga kebutuhan dasar siswa. Negara harus hadir secara konkret, terutama untuk daerah 3T."
+      }
+    ]
+  }
+}

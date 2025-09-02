@@ -1,0 +1,315 @@
+{
+  "texts": [
+    {
+      "id": "sastra_1",
+      "type": "sastra",
+      "title": "Suara di Bawah Langit Jayapura",
+      "learning_objectives": [
+        "Mahasiswa dapat memahami makna teks sastra kontekstual",
+        "Mahasiswa mampu menginterpretasi nilai sosial dan budaya dalam karya sastra",
+        "Mahasiswa mampu menyampaikan tanggapan dan makna personal terhadap teks"
+      ],
+      "text_content": {
+        "title": "Suara di Bawah Langit Jayapura",
+        "subtitle": "(Puisi naratif karya imajinatif berbasis realitas sosial Papua)",
+        "content": [
+          "Di bawah langit merah senja Jayapura,",
+          "anak-anak berlari di tanah berbatu,",
+          "membawa tawa yang tak sempat dijahit buku,",
+          "sekolah tinggal cerita di balik pohon sagu.",
+          "",
+          "Seorang ibu menanak harap dalam belanga tanah,",
+          "sambil menunggu kapal tak pernah datang.",
+          "Di pasar, suara tifa tenggelam oleh bunyi sirine,",
+          "antara hukum dan adat, siapa yang lebih dulu patah?",
+          "",
+          "Aku mendengar suara ayahku dari lereng Cycloop,",
+          "menyebut nama-nama kampung yang hilang dari peta.",
+          "Apakah ini tanah yang diwariskan nenek moyang?",
+          "Atau sekadar halaman kosong dalam undang-undang?",
+          "",
+          "Tapi langit tetap menyimpan doa",
+          "di balik setiap awan hitam yang jatuh.",
+          "Papua bukan kata yang ditulis di pinggir,",
+          "tapi titik pusat denyut bangsa yang terlupa."
+        ]
+      },
+      "circ_phases": {
+        "phase_1": {
+          "title": "Aktivasi Konteks",
+          "tasks": [
+            {
+              "question": "Apa hal pertama yang terlintas ketika kamu mendengar kata \"Jayapura\"?",
+              "ideal_answer": "Ibukota Papua, pantai, warna budaya"
+            },
+            {
+              "question": "Bagaimana perasaanmu saat membaca puisi tentang tanah kelahiran?",
+              "ideal_answer": "Bangga sekaligus haru, karena banyak nilai lokal yang jarang diangkat"
+            }
+          ]
+        },
+        "phase_2": {
+          "title": "Membaca Terpadu",
+          "tasks": [
+            {
+              "instruction": "Tuliskan isi pokok tiap bait puisi dan suasana yang dibangun",
+              "ideal_answers": [
+                "Bait 1: Anak-anak Papua yang kekurangan akses pendidikan → suasana lirih",
+                "Bait 2: Ibu dan kehidupan yang menunggu harapan → suasana pasrah dan getir",
+                "Bait 3: Ayah dan ingatan akan identitas budaya yang terhapus → suasana protes",
+                "Bait 4: Doa dan harapan bagi masa depan Papua → suasana optimistis"
+              ]
+            }
+          ]
+        },
+        "phase_3": {
+          "title": "Tinjauan Kritis",
+          "tasks": [
+            {
+              "question": "Apa kritik sosial yang disampaikan melalui puisi ini?",
+              "ideal_answer": "Kritik terhadap ketimpangan pendidikan, ketidakadilan sosial, dan marginalisasi Papua"
+            },
+            {
+              "question": "Bagaimana simbol alam Papua digunakan dalam puisi?",
+              "ideal_answer": "Gunung, tifa, pohon sagu, kapal → simbol akar budaya dan harapan"
+            },
+            {
+              "question": "Apakah puisi ini berpihak? Kepada siapa?",
+              "ideal_answer": "Ya, berpihak kepada masyarakat adat Papua dan suara yang terpinggirkan"
+            }
+          ]
+        },
+        "phase_4": {
+          "title": "Komposisi Reflektif",
+          "tasks": [
+            {
+              "question": "Tulis refleksi pribadi (2 paragraf) tentang makna puisi bagi dirimu sebagai mahasiswa Papua.",
+              "ideal_answer": "Puisi ini menyentuh saya karena menggambarkan kenyataan yang akrab: banyak kampung saya masih belum punya sekolah yang layak. Saya jadi tergerak untuk berpikir: apa kontribusi saya nanti?\n\nSaya percaya pendidikan dan sastra bisa menjadi jembatan suara untuk menyuarakan ketidakadilan dan memperjuangkan perubahan. Sebagai mahasiswa, saya merasa punya tanggung jawab itu."
+            }
+          ]
+        },
+        "phase_5": {
+          "title": "Diskusi Kolaboratif",
+          "tasks": [
+            {
+              "instruction": "Unggah refleksi dan tanggapi refleksi teman (1 tanggapan)",
+              "example_response": "Wah, refleksimu bagus, Lani. Aku juga merasa bahwa puisi ini tidak hanya menyentuh hati, tapi membangkitkan kesadaran. Mungkin kita bisa bikin proyek puisi kontekstual lain di kampus."
+            }
+          ]
+        },
+        "phase_6": {
+          "title": "Presentasi Kritis",
+          "tasks": [
+            {
+              "instruction": "Buat presentasi 1 slide berisi: Interpretasi isi, Nilai budaya yang diangkat, Relevansi dengan kehidupan saat ini",
+              "ideal_answer": {
+                "interpretation": "Puisi mengungkapkan luka sosial dan harapan masyarakat Papua",
+                "cultural_values": "Mengangkat adat, tanah, dan simbol lokal seperti Cycloop dan tifa",
+                "relevance": "Isu pendidikan, identitas, dan pembangunan di Papua masih relevan hari ini"
+              }
+            }
+          ]
+        }
+      },
+      "final_assessment": {
+        "multiple_choice": [
+          {
+            "question": "Gaya bahasa dominan yang digunakan dalam puisi:",
+            "options": [
+              "Alegori",
+              "Naratif simbolik",
+              "Hiperbola",
+              "Deskriptif literal"
+            ],
+            "correct_answer": 1,
+            "explanation": "Puisi menggunakan gaya naratif simbolik dengan berbagai simbol alam dan budaya Papua"
+          },
+          {
+            "question": "Tokoh utama dalam puisi:",
+            "options": [
+              "Pemerintah",
+              "Anak dan keluarga Papua",
+              "Aktivis",
+              "Mahasiswa"
+            ],
+            "correct_answer": 1,
+            "explanation": "Puisi menampilkan anak-anak, ibu, dan ayah sebagai representasi keluarga Papua"
+          },
+          {
+            "question": "Nilai utama yang disuarakan:",
+            "options": [
+              "Keberhasilan pembangunan",
+              "Kekayaan alam",
+              "Ketimpangan dan harapan masyarakat Papua",
+              "Kesehatan masyarakat"
+            ],
+            "correct_answer": 2,
+            "explanation": "Puisi menyuarakan ketimpangan sosial dan harapan masyarakat Papua"
+          }
+        ],
+        "reflection_questions": [
+          {
+            "question": "Apa bagian paling menyentuh dari puisi ini menurutmu?",
+            "ideal_answer": "Saya tersentuh di bait terakhir yang menyebut Papua sebagai \"denyut bangsa yang terlupa\"."
+          },
+          {
+            "question": "Bagaimana kamu melihat peran sastra dalam menyuarakan isu sosial?",
+            "ideal_answer": "Menurut saya, sastra bisa menyampaikan hal yang tidak bisa dijelaskan oleh laporan atau pidato."
+          },
+          {
+            "question": "Apakah kamu tertarik menulis puisi dengan konteks lokal daerahmu? Mengapa?",
+            "ideal_answer": "Saya tertarik menulis puisi tentang kampung saya karena banyak cerita yang belum diangkat."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sastra_2",
+      "type": "sastra",
+      "title": "Di Antara Tifa dan Wi-Fi",
+      "learning_objectives": [
+        "Mahasiswa dapat memahami unsur intrinsik cerpen kontekstual",
+        "Mahasiswa dapat mengaitkan isi cerita dengan realitas sosial Papua",
+        "Mahasiswa mampu menyampaikan refleksi dan interpretasi nilai budaya dalam karya sastra"
+      ],
+      "text_content": {
+        "title": "Di Antara Tifa dan Wi-Fi",
+        "content": [
+          "Namaku Lince Laura Assem. Aku mahasiswa semester lima di sebuah universitas swasta di Sorong. Sejak pandemi, aku pulang ke kampung di pinggir Danau Ayamaru. Tapi sinyal internet di sini bagai hantu---kadang ada, lebih sering tidak. Untuk mengikuti kuliah daring, aku harus naik ke bukit belakang kampung, duduk di atas batu besar, dan menyalakan tethering dari ponsel.",
+          "Ayah tidak banyak bicara, tapi aku tahu dia bangga. Setiap pagi sebelum aku \"pergi ke kampus\"---alias ke bukit---dia mengetuk tifa di teras rumah. Tifa itu dulu alat komunikasi kampung, sekarang jadi simbol semangat. \"Jangan menyerah, Lemi,\" katanya, \"karena ilmu tak pernah datang ke orang malas.\"",
+          "Satu hari, dosen memberikan tugas kelompok. Tapi aku sulit koordinasi karena aku harus hemat kuota. Aku merasa malu dan marah. Sempat aku berpikir berhenti kuliah saja. Tapi malam itu, aku melihat ayah menambal kulit tifa yang retak. Katanya, \"Kalau rusak, kita perbaiki. Jangan buang semangatmu hanya karena sinyal.\"",
+          "Aku menangis. Besoknya aku bicara ke dosen dan teman-teman, minta alternatif. Mereka mengerti. Sekarang aku mulai merekam tugas, kirim lewat malam saat sinyal muncul.",
+          "Kuliah dari kampung itu berat, tapi aku tahu aku tidak sendiri. Tifa dan Wi-Fi mungkin dua dunia berbeda, tapi keduanya sama: jadi jembatan bagi masa depan."
+        ]
+      },
+      "circ_phases": {
+        "phase_1": {
+          "title": "Aktivasi Konteks",
+          "tasks": [
+            {
+              "question": "Apa tantangan terberat yang pernah kamu hadapi saat belajar daring?",
+              "ideal_answer": "Tidak ada sinyal, tidak punya kuota, listrik padam"
+            },
+            {
+              "question": "Pernahkah kamu merasa ingin menyerah dalam proses pendidikan?",
+              "ideal_answer": "Ya, saat tidak didukung lingkungan atau tidak punya alat belajar yang cukup"
+            }
+          ]
+        },
+        "phase_2": {
+          "title": "Membaca Terpadu",
+          "tasks": [
+            {
+              "instruction": "Tuliskan unsur-unsur intrinsik cerpen ini",
+              "elements": {
+                "tokoh": "Lince, Ayah",
+                "latar": "Kampung pinggir Danau Ayamaru, bukit sinyal, rumah",
+                "alur": "Maju (perjuangan Lemi dalam kuliah daring)",
+                "amanat": "Jangan menyerah menghadapi keterbatasan, maknai pendidikan sebagai perjuangan"
+              }
+            }
+          ]
+        },
+        "phase_3": {
+          "title": "Tinjauan Kritis",
+          "tasks": [
+            {
+              "question": "Apa konflik utama dalam cerita ini?",
+              "ideal_answer": "Konflik antara semangat belajar vs keterbatasan infrastruktur"
+            },
+            {
+              "question": "Apa makna simbolik dari tifa dan Wi-Fi dalam cerpen?",
+              "ideal_answer": "Tifa = semangat budaya; Wi-Fi = teknologi pendidikan; keduanya jembatan masa depan"
+            },
+            {
+              "question": "Apa sikap ayah Lince terhadap pendidikan?",
+              "ideal_answer": "Mendukung dengan caranya sendiri---diam tapi penuh makna"
+            }
+          ]
+        },
+        "phase_4": {
+          "title": "Komposisi Reflektif",
+          "tasks": [
+            {
+              "question": "Tuliskan refleksi (2 paragraf): bagaimana cerpen ini membuatmu berpikir ulang tentang semangat belajar dan peran keluarga?",
+              "ideal_answer": "Cerpen ini membuat saya sadar bahwa belajar tidak selalu butuh fasilitas sempurna. Semangat dan dukungan orang terdekat justru menjadi kekuatan terbesar.\n\nAyah Lince mengingatkan saya pada orang tua saya, yang diam-diam mendorong saya agar terus kuliah walau banyak tantangan."
+            }
+          ]
+        },
+        "phase_5": {
+          "title": "Diskusi Kolaboratif",
+          "tasks": [
+            {
+              "instruction": "Unggah refleksi dan tanggapi satu refleksi teman",
+              "example_response": "Cerita kamu menyentuh, Joni. Aku juga belajar dari Lince bahwa tidak semua perjuangan harus besar, yang kecil tapi konsisten justru berharga."
+            }
+          ]
+        },
+        "phase_6": {
+          "title": "Presentasi Kritis",
+          "tasks": [
+            {
+              "instruction": "Buat presentasi singkat tentang: Tokoh inspiratif, Nilai budaya dan pendidikan, Relevansi cerita dengan kehidupan mahasiswa Papua saat ini",
+              "ideal_answer": {
+                "tokoh_inspiratif": "Ayah Lince",
+                "nilai_budaya": "Semangat belajar, budaya lokal (tifa), adaptasi teknologi",
+                "relevansi": "Banyak mahasiswa Papua belajar dalam keterbatasan tapi tetap berjuang"
+              }
+            }
+          ]
+        }
+      },
+      "final_assessment": {
+        "multiple_choice": [
+          {
+            "question": "Konflik utama dalam cerita:",
+            "options": [
+              "Lince sakit parah",
+              "Lince kesulitan mengikuti perkuliahan daring",
+              "Lince tidak lulus ujian",
+              "Lince tidak didukung keluarganya"
+            ],
+            "correct_answer": 1,
+            "explanation": "Konflik utama adalah kesulitan Lince mengikuti kuliah daring karena keterbatasan sinyal dan kuota"
+          },
+          {
+            "question": "Makna simbolis tifa dalam cerita:",
+            "options": [
+              "Alat musik biasa",
+              "Hiburan anak-anak",
+              "Simbol perjuangan dan semangat belajar",
+              "Barang antik"
+            ],
+            "correct_answer": 2,
+            "explanation": "Tifa melambangkan semangat dan perjuangan dalam menempuh pendidikan"
+          },
+          {
+            "question": "Karakter Ayah Lince digambarkan sebagai...",
+            "options": [
+              "Tegas dan pemarah",
+              "Penakut dan pasif",
+              "Pendiam tapi mendukung",
+              "Tidak peduli"
+            ],
+            "correct_answer": 2,
+            "explanation": "Ayah Lince digambarkan sebagai sosok yang pendiam namun sangat mendukung pendidikan anaknya"
+          }
+        ],
+        "reflection_questions": [
+          {
+            "question": "Apa pelajaran paling berharga dari Lince menurutmu?",
+            "ideal_answer": "Pelajaran paling berharga dari Lince adalah semangat pantang menyerah dalam keterbatasan. Ia tidak menjadikan masalah sinyal dan fasilitas sebagai alasan untuk berhenti belajar, tetapi justru sebagai motivasi untuk terus berjuang."
+          },
+          {
+            "question": "Siapa dalam hidupmu yang seperti \"Ayah Lince\"?",
+            "ideal_answer": "Orang tua saya, khususnya ibu. Ia tidak banyak bicara, tapi selalu bangun pagi menyiapkan sarapan sebelum saya kuliah. Dari sikapnya, saya tahu bahwa beliau mendukung dan berharap saya berhasil."
+          },
+          {
+            "question": "Jika kamu jadi Lince, apa yang akan kamu lakukan secara berbeda?",
+            "ideal_answer": "Jika saya jadi Lince, mungkin saya akan lebih cepat terbuka kepada dosen tentang kendala saya. Dengan komunikasi yang jujur, saya bisa mendapatkan solusi lebih awal dan tidak menyimpan rasa malu sendiri."
+          }
+        ]
+      }
+    }
+  ]
+}
