@@ -2,17 +2,17 @@ import { View, Text, ScrollView, TouchableOpacity, StyleSheet, Alert, Image } fr
 import React, { useState, useEffect } from 'react'
 import { colors, fonts } from '../../utils'
 import { MyHeader, MyInput, MyRadio } from '../../components'
-import sastraData from '../ModulLiterasi/sastra.json'
+import ilmiahPopulerData from '../ModulLiterasi/ilmiahpopuler.json'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
-export default function SastraKontekstual({navigation}) {
+export default function IlmiahPopuler({navigation}) {
   const [currentTeks, setCurrentTeks] = useState(0) // Index teks yang sedang aktif (0 atau 1)
   const [currentTahap, setCurrentTahap] = useState(0) // Index tahap CIRC (0-5)
   const [userAnswers, setUserAnswers] = useState({}) // Menyimpan jawaban user
   const [evaluationAnswers, setEvaluationAnswers] = useState({}) // Untuk soal pilihan ganda
   const [showEvaluation, setShowEvaluation] = useState(false)
 
-  const currentData = sastraData.texts[currentTeks]
+  const currentData = ilmiahPopulerData.texts[currentTeks]
   
   const tahapNames = [
     'Aktivasi Konteks',
@@ -65,21 +65,9 @@ export default function SastraKontekstual({navigation}) {
           break
 
         case 1: // Membaca Terpadu
-          if (currentTeks === 0) {
-            // Untuk puisi - analisis bait
-            const key = `tahap_${currentTahap}_analisis_bait`
-            if (!userAnswers[key] || userAnswers[key].trim() === '') {
-              missingFields.push('Analisis isi pokok tiap bait dan suasana')
-            }
-          } else {
-            // Untuk cerpen - unsur intrinsik
-            const unsurElements = ['tokoh', 'latar', 'alur', 'amanat']
-            unsurElements.forEach(element => {
-              const key = `tahap_${currentTahap}_${element}`
-              if (!userAnswers[key] || userAnswers[key].trim() === '') {
-                missingFields.push(`Unsur ${element}`)
-              }
-            })
+          const key = `tahap_${currentTahap}_poin_utama`
+          if (!userAnswers[key] || userAnswers[key].trim() === '') {
+            missingFields.push('Poin utama dari setiap paragraf')
           }
           break
 
@@ -112,25 +100,18 @@ export default function SastraKontekstual({navigation}) {
           break
 
         case 5: // Presentasi Kritis
-          if (currentTeks === 0) {
-            // Untuk puisi
-            const presentasiFields = ['interpretasi', 'nilai_budaya', 'relevansi']
-            presentasiFields.forEach((field) => {
-              const key = `tahap_${currentTahap}_${field}`
-              if (!userAnswers[key] || userAnswers[key].trim() === '') {
-                missingFields.push(field.charAt(0).toUpperCase() + field.slice(1).replace('_', ' '))
-              }
-            })
-          } else {
-            // Untuk cerpen
-            const presentasiFields = ['tokoh_inspiratif', 'nilai_budaya', 'relevansi']
-            presentasiFields.forEach((field) => {
-              const key = `tahap_${currentTahap}_${field}`
-              if (!userAnswers[key] || userAnswers[key].trim() === '') {
-                missingFields.push(field.charAt(0).toUpperCase() + field.slice(1).replace('_', ' '))
-              }
-            })
-          }
+          // Untuk teks 1 (Sampah Plastik): masalah, dampak, solusi
+          // Untuk teks 2 (Pendidikan Multikultural): realita, temuan, solusi
+          const presentasiFields = currentTeks === 0 
+            ? ['masalah', 'dampak', 'solusi']
+            : ['realita', 'temuan', 'solusi']
+            
+          presentasiFields.forEach((field) => {
+            const key = `tahap_${currentTahap}_${field}`
+            if (!userAnswers[key] || userAnswers[key].trim() === '') {
+              missingFields.push(field.charAt(0).toUpperCase() + field.slice(1))
+            }
+          })
           break
       }
     }
@@ -141,25 +122,25 @@ export default function SastraKontekstual({navigation}) {
   // Function untuk menyimpan data ke AsyncStorage
   const saveToStorage = async () => {
     try {
-      const sastraProgress = {
+      const ilmiahPopulerProgress = {
+        currentTeks,
         userAnswers,
         evaluationAnswers,
-        currentTeks,
         completedAt: new Date().toISOString(),
         progress: 100
       }
       
-      await AsyncStorage.setItem('sastra_kontekstual_progress', JSON.stringify(sastraProgress))
+      await AsyncStorage.setItem('ilmiah_populer_progress', JSON.stringify(ilmiahPopulerProgress))
       
       // Update progress modul literasi
       const modulProgress = await AsyncStorage.getItem('modul_literasi_progress')
       let progress = modulProgress ? JSON.parse(modulProgress) : {}
       
-  progress.sastra_kontekstual = {
-  completed: true,
-  completedAt: new Date().toISOString(),
-  progress: 100
-}
+      progress.ilmiah_populer = {
+        completed: true,
+        completedAt: new Date().toISOString(),
+        progress: 100
+      }
       
       await AsyncStorage.setItem('modul_literasi_progress', JSON.stringify(progress))
       
@@ -180,7 +161,7 @@ export default function SastraKontekstual({navigation}) {
       // Show success alert
       Alert.alert(
         'Selamat! 🎉',
-        'Anda telah menyelesaikan Modul Sastra Kontekstual dengan progress 100%!\n\nData pembelajaran telah disimpan.',
+        'Anda telah menyelesaikan Modul Ilmiah Populer dengan progress 100%!\n\nData pembelajaran telah disimpan.',
         [
           {
             text: 'Kembali ke Menu',
@@ -255,8 +236,8 @@ export default function SastraKontekstual({navigation}) {
       return
     }
 
-    if (currentTeks < sastraData.texts.length - 1) {
-      // Pindah ke teks berikutnya
+    if (currentTeks < ilmiahPopulerData.texts.length - 1) {
+      // Reset untuk teks berikutnya
       setCurrentTeks(currentTeks + 1)
       setCurrentTahap(0)
       setShowEvaluation(false)
@@ -299,86 +280,25 @@ export default function SastraKontekstual({navigation}) {
             <Text style={styles.sectionTitle}>Teks Bacaan:</Text>
             <View style={styles.textContainer}>
               <Text style={styles.textTitle}>{currentData.text_content.title}</Text>
-              {currentData.text_content.subtitle && (
-                <Text style={styles.textSubtitle}>{currentData.text_content.subtitle}</Text>
-              )}
-              {currentTeks === 0 ? (
-                // Render puisi
-                currentData.text_content.content.map((line, index) => (
-                  <Text key={index} style={styles.poetryLine}>
-                    {line}
-                  </Text>
-                ))
-              ) : (
-                // Render cerpen
-                currentData.text_content.content.map((paragraph, index) => (
-                  <Text key={index} style={styles.textContent}>
-                    {paragraph}
-                  </Text>
-                ))
-              )}
+              {currentData.text_content.paragraphs.map((paragraph, index) => (
+                <Text key={index} style={styles.textContent}>
+                  {paragraph}
+                </Text>
+              ))}
             </View>
             
-            {currentTeks === 0 ? (
-              // Untuk puisi - analisis bait
-              <View>
-                <Text style={styles.instructionText}>
-                  Setelah membaca puisi di atas, tuliskan isi pokok tiap bait dan suasana yang dibangun:
-                </Text>
-                
-                <MyInput
-                  label="Analisis isi pokok tiap bait dan suasana:"
-                  multiline
-                  numberOfLines={8}
-                  placeholder="Bait 1: ...\nBait 2: ...\nBait 3: ...\nBait 4: ..."
-                  onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_analisis_bait`, value)}
-                  value={userAnswers[`tahap_${currentTahap}_analisis_bait`] || ''}
-                />
-              </View>
-            ) : (
-              // Untuk cerpen - unsur intrinsik
-              <View>
-                <Text style={styles.instructionText}>
-                  Setelah membaca cerpen di atas, tuliskan unsur-unsur intrinsik cerpen ini:
-                </Text>
-                
-                <MyInput
-                  label="Tokoh:"
-                  multiline
-                  numberOfLines={2}
-                  placeholder="Contoh: Lince, Ayah"
-                  onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_tokoh`, value)}
-                  value={userAnswers[`tahap_${currentTahap}_tokoh`] || ''}
-                />
-                
-                <MyInput
-                  label="Latar:"
-                  multiline
-                  numberOfLines={2}
-                  placeholder="Contoh: Kampung pinggir Danau Ayamaru, bukit sinyal, rumah"
-                  onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_latar`, value)}
-                  value={userAnswers[`tahap_${currentTahap}_latar`] || ''}
-                />
-                
-                <MyInput
-                  label="Alur:"
-                  multiline
-                  numberOfLines={2}
-                  placeholder="Contoh: Maju (perjuangan Lemi dalam kuliah daring)"
-                  onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_alur`, value)}
-                  value={userAnswers[`tahap_${currentTahap}_alur`] || ''}
-                />
-                
-                <MyInput
-                  label="Amanat:"
-                  multiline
-                  numberOfLines={3}
-                  placeholder="Contoh: Jangan menyerah menghadapi keterbatasan..."
-                  onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_amanat`, value)}
-                  value={userAnswers[`tahap_${currentTahap}_amanat`] || ''}
-                />
-              </View>
-            )}
+            <Text style={styles.instructionText}>
+              {phaseData.tasks?.[0]?.question}
+            </Text>
+            
+            <MyInput
+              label="Tuliskan poin utama setiap paragraf:"
+              multiline
+              numberOfLines={6}
+              placeholder="Paragraf 1: ...\nParagraf 2: ...\nParagraf 3: ...\nParagraf 4: ..."
+              onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_poin_utama`, value)}
+              value={userAnswers[`tahap_${currentTahap}_poin_utama`] || ''}
+            />
           </View>
         )
 
@@ -386,7 +306,7 @@ export default function SastraKontekstual({navigation}) {
         return (
           <View>
             <Text style={styles.instructionText}>
-              Analisis teks sastra yang telah Anda baca:
+              Analisis teks ilmiah populer yang telah Anda baca:
             </Text>
             {phaseData.tasks?.map((task, index) => (
               <MyInput
@@ -438,7 +358,7 @@ export default function SastraKontekstual({navigation}) {
               label="Tanggapan untuk teman:"
               multiline
               numberOfLines={4}
-              placeholder={phaseData.tasks?.[0]?.example_response || "Contoh: Wah bagus sekali pendapatmu..."}
+              placeholder={phaseData.tasks?.[0]?.example_response || "Contoh: Saya suka ide kamu..."}
               onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_tanggapan_teman`, value)}
               value={userAnswers[`tahap_${currentTahap}_tanggapan_teman`] || ''}
             />
@@ -450,70 +370,70 @@ export default function SastraKontekstual({navigation}) {
         const idealAnswer = tahap6Task?.ideal_answer
         
         if (currentTeks === 0) {
-          // Untuk puisi
+          // Teks 1: Sampah Plastik (Masalah, Dampak, Solusi)
           return (
             <View>
               <Text style={styles.instructionText}>{tahap6Task?.instruction}</Text>
               
               <MyInput
-                label="Interpretasi Isi:"
+                label="Masalah:"
                 multiline
                 numberOfLines={3}
-                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_interpretasi`, value)}
-                value={userAnswers[`tahap_${currentTahap}_interpretasi`] || ''}
-                placeholder={idealAnswer?.interpretation || "Contoh: Puisi mengungkapkan luka sosial..."}
+                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_masalah`, value)}
+                value={userAnswers[`tahap_${currentTahap}_masalah`] || ''}
+                placeholder={idealAnswer?.masalah || "Contoh: Sampah plastik yang menumpuk"}
               />
               
               <MyInput
-                label="Nilai Budaya yang Diangkat:"
+                label="Dampak:"
                 multiline
                 numberOfLines={3}
-                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_nilai_budaya`, value)}
-                value={userAnswers[`tahap_${currentTahap}_nilai_budaya`] || ''}
-                placeholder={idealAnswer?.cultural_values || "Contoh: Mengangkat adat, tanah, dan simbol lokal..."}
+                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_dampak`, value)}
+                value={userAnswers[`tahap_${currentTahap}_dampak`] || ''}
+                placeholder={idealAnswer?.dampak || "Contoh: Pencemaran lingkungan"}
               />
               
               <MyInput
-                label="Relevansi dengan Kehidupan Saat Ini:"
+                label="Solusi yang bisa dilakukan mahasiswa:"
                 multiline
-                numberOfLines={3}
-                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_relevansi`, value)}
-                value={userAnswers[`tahap_${currentTahap}_relevansi`] || ''}
-                placeholder={idealAnswer?.relevance || "Contoh: Isu pendidikan, identitas, dan pembangunan..."}
+                numberOfLines={4}
+                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_solusi`, value)}
+                value={userAnswers[`tahap_${currentTahap}_solusi`] || ''}
+                placeholder={idealAnswer?.solusi || "Contoh: Kurangi plastik sekali pakai"}
               />
             </View>
           )
         } else {
-          // Untuk cerpen
+          // Teks 2: Pendidikan Multikultural (Realita, Temuan, Solusi)
           return (
             <View>
               <Text style={styles.instructionText}>{tahap6Task?.instruction}</Text>
               
               <MyInput
-                label="Tokoh Inspiratif:"
+                label="Realita pendidikan multikultural di Sorong:"
                 multiline
-                numberOfLines={2}
-                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_tokoh_inspiratif`, value)}
-                value={userAnswers[`tahap_${currentTahap}_tokoh_inspiratif`] || ''}
-                placeholder={idealAnswer?.tokoh_inspiratif || "Contoh: Ayah Lince"}
+                numberOfLines={3}
+                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_realita`, value)}
+                value={userAnswers[`tahap_${currentTahap}_realita`] || ''}
+                placeholder={idealAnswer?.realita || "Contoh: Guru menghadapi kelas yang multikultur"}
               />
               
               <MyInput
-                label="Nilai Budaya dan Pendidikan:"
+                label="Temuan utama penelitian:"
                 multiline
                 numberOfLines={3}
-                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_nilai_budaya`, value)}
-                value={userAnswers[`tahap_${currentTahap}_nilai_budaya`] || ''}
-                placeholder={idealAnswer?.nilai_budaya || "Contoh: Semangat belajar, budaya lokal..."}
+                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_temuan`, value)}
+                value={userAnswers[`tahap_${currentTahap}_temuan`] || ''}
+                placeholder={idealAnswer?.temuan || "Contoh: Guru punya sikap baik tapi butuh pelatihan"}
               />
               
               <MyInput
-                label="Relevansi dengan Kehidupan Mahasiswa Papua:"
+                label="Usulan solusi mahasiswa:"
                 multiline
-                numberOfLines={3}
-                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_relevansi`, value)}
-                value={userAnswers[`tahap_${currentTahap}_relevansi`] || ''}
-                placeholder={idealAnswer?.relevansi || "Contoh: Banyak mahasiswa Papua belajar dalam keterbatasan..."}
+                numberOfLines={4}
+                onChangeText={(value) => saveAnswer(`tahap_${currentTahap}_solusi`, value)}
+                value={userAnswers[`tahap_${currentTahap}_solusi`] || ''}
+                placeholder={idealAnswer?.solusi || "Contoh: Pendidikan guru berbasis multikultural"}
               />
             </View>
           )
@@ -562,7 +482,7 @@ export default function SastraKontekstual({navigation}) {
 
   return (
     <View style={styles.container}>
-      <MyHeader title="Sastra Kontekstual" />
+      <MyHeader title="Ilmiah Populer" />
 
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         {/* Header Info */}
@@ -571,8 +491,8 @@ export default function SastraKontekstual({navigation}) {
           <Text style={styles.progressText}>
             {showEvaluation ? 'Evaluasi' : `${tahapNames[currentTahap]} (${currentTahap + 1}/6)`}
           </Text>
-          <Text style={styles.textProgressText}>
-            Teks {currentTeks + 1} dari {sastraData.texts.length}
+          <Text style={styles.progressText}>
+            Teks {currentTeks + 1} dari {ilmiahPopulerData.texts.length}
           </Text>
         </View>
 
@@ -606,8 +526,8 @@ export default function SastraKontekstual({navigation}) {
           >
             <Text style={[styles.navButtonText, styles.primaryButtonText]}>
               {showEvaluation ? 
-                (currentTeks < sastraData.texts.length - 1 ? 'Teks Selanjutnya' : 'Selesai') : 
-                (currentTahap < 5 ? 'Selanjutnya' : 'Evaluasi')
+                (currentTeks < ilmiahPopulerData.texts.length - 1 ? 'Teks Berikutnya' : 'Selesai') 
+                : (currentTahap < 5 ? 'Selanjutnya' : 'Evaluasi')
               }
             </Text>
           </TouchableOpacity>
@@ -644,13 +564,6 @@ const styles = StyleSheet.create({
     color: colors.white,
     opacity: 0.9,
   },
-  textProgressText: {
-    fontSize: 12,
-    fontFamily: fonts.primary[400],
-    color: colors.white,
-    opacity: 0.8,
-    marginTop: 3,
-  },
   section: {
     marginBottom: 25,
   },
@@ -684,16 +597,8 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: fonts.primary[600],
     color: '#2c3e50',
-    marginBottom: 8,
+    marginBottom: 10,
     textAlign: 'center',
-  },
-  textSubtitle: {
-    fontSize: 12,
-    fontFamily: fonts.primary[400],
-    color: '#7f8c8d',
-    marginBottom: 15,
-    textAlign: 'center',
-    fontStyle: 'italic',
   },
   textContent: {
     fontSize: 14,
@@ -702,14 +607,6 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     marginBottom: 12,
     textAlign: 'justify',
-  },
-  poetryLine: {
-    fontSize: 14,
-    fontFamily: fonts.primary[400],
-    color: '#2c3e50',
-    lineHeight: 20,
-    marginBottom: 4,
-    textAlign: 'left',
   },
   questionContainer: {
     marginBottom: 20,

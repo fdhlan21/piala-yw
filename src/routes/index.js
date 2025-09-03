@@ -106,6 +106,9 @@ import {
   Argumentatif,
   OpiniPublik,
   SastraKontekstual,
+  IlmiahPopuler,
+  LatihanRefleksi,
+  ForumDiskusi,
 } from '../pages';
 import {colors} from '../utils';
 import {Icon} from 'react-native-elements';
@@ -178,6 +181,33 @@ export default function Router() {
           headerShown: false,
         }}
       />
+
+        <Stack.Screen
+        name="IlmiahPopuler"
+        component={IlmiahPopuler}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+
+
+        <Stack.Screen
+        name="LatihanRefleksi"
+        component={LatihanRefleksi}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+        <Stack.Screen
+        name="ForumDiskusi"
+        component={ForumDiskusi}
+        options={{
+          headerShown: false,
+        }}
+      />
+
 
       <Stack.Screen
         name="CheckOut"

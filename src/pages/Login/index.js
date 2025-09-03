@@ -12,6 +12,7 @@ import {apiURL, storeData} from '../../utils/localStorage';
 import MyLoading from '../../components/MyLoading';
 import {TouchableOpacity} from 'react-native';
 import { Image } from 'react-native';
+
 export default function Login({navigation, route}) {
   const [kirim, setKirim] = useState({
     fullname:'',
@@ -27,10 +28,17 @@ export default function Login({navigation, route}) {
       [x]: v,
     });
   };
+  
   const [loading, setLoading] = useState(false);
+  
   const sendData = () => {
-    if (kirim.username.length == 0) {
-      toast.show('Username masih kosong !');
+    // Perbaikan: ganti kirim.username menjadi kirim.fullname atau field yang sesuai untuk login
+    if (kirim.fullname.length == 0) {
+      toast.show('Nama lengkap masih kosong !');
+    } else if (kirim.nim.length == 0) {
+      toast.show('NIM masih kosong !');
+    } else if (kirim.pengguruan_tinggi.length == 0) {
+      toast.show('Perguruan tinggi masih kosong !');
     } else if (kirim.password.length == 0) {
       toast.show('Kata sandi masih kosong !');
     } else {
@@ -46,9 +54,14 @@ export default function Login({navigation, route}) {
             toast.show(res.data.message);
           }
         }, 700);
+      }).catch(error => {
+        setLoading(false);
+        toast.show('Terjadi kesalahan koneksi');
+        console.error('Login error:', error);
       });
     }
   };
+
   return (
     <View
       style={{flex: 1, backgroundColor: colors.white, flexDirection: 'column'}}>
@@ -83,7 +96,7 @@ export default function Login({navigation, route}) {
           Masuk
         </Text>
 
-            <MyInput
+        <MyInput
           value={kirim.fullname}
           onChangeText={x => updateKirim('fullname', x)}
           label="Nama Lengkap"
@@ -99,14 +112,13 @@ export default function Login({navigation, route}) {
           iconname="map-outline"
         />
 
-          <MyInput
+        <MyInput
           value={kirim.pengguruan_tinggi}
           onChangeText={x => updateKirim('pengguruan_tinggi', x)}
-          label="Pengguruan Tinggi"
-          placeholder="Masukan Pengguruan Tinggi"
+          label="Perguruan Tinggi"
+          placeholder="Masukan Perguruan Tinggi"
           iconname="school-outline"
         />
-
 
         <MyInput
           value={kirim.password}
@@ -116,9 +128,12 @@ export default function Login({navigation, route}) {
           iconname="lock-closed-outline"
           secureTextEntry
         />
+        
         <MyGap jarak={20} />
+        
         {!loading && <MyButton onPress={sendData} title="MASUK" />}
         {loading && <MyLoading />}
+        
         <TouchableOpacity
           onPress={() => navigation.navigate('Register')}
           style={{

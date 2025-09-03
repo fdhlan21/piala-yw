@@ -51,6 +51,9 @@ import Eksposisi from './ModulLiterasi/eksposisi';
 import Argumentatif from './ModulLiterasi/argumentatif';
 import OpiniPublik from './ModulLiterasi/opinipublik';
 import SastraKontekstual from './ModulLiterasi/sastra';
+import IlmiahPopuler from './ModulLiterasi/IlmiahPopuler';
+import LatihanRefleksi from './LatihanRefleksi';
+import ForumDiskusi from './forumdiskusi';
 
 
 // NEW
@@ -109,6 +112,8 @@ Eksposisi,
 Argumentatif,
 OpiniPublik,
 SastraKontekstual,
-
+IlmiahPopuler,
+LatihanRefleksi,
+ForumDiskusi,
 
 };

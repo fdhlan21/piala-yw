@@ -1,0 +1,300 @@
+{
+  "texts": [
+    {
+      "id": "ilmiah_populer_1",
+      "type": "ilmiah_populer", 
+      "title": "Sampah Plastik di Sorong: Ancaman Nyata dari Hal Sepele",
+      "learning_objectives": [
+        "Mahasiswa memahami struktur dan ciri teks ilmiah populer",
+        "Mahasiswa dapat mengidentifikasi data dan fakta dalam teks ilmiah",
+        "Mahasiswa mampu menyampaikan solusi berbasis informasi ilmiah"
+      ],
+      "text_content": {
+        "title": "Sampah Plastik di Sorong: Ancaman Nyata dari Hal Sepele",
+        "paragraphs": [
+          "Sorong, salah satu kota pesisir yang berkembang pesat di Papua Barat Daya, kini menghadapi masalah serius: sampah plastik. Di pasar, di selokan, hingga di pantai Doom, plastik bertebaran. Padahal, data Dinas Lingkungan Hidup menunjukkan bahwa pada tahun 2023, volume sampah plastik di Sorong mencapai 3.800 ton---dan hanya 11% yang berhasil didaur ulang.",
+          "Yang mengejutkan, sebagian besar sampah itu berasal dari plastik sekali pakai: bungkus makanan, botol air mineral, dan kantong kresek. Banyak orang tidak menyadari bahwa plastik butuh waktu ratusan tahun untuk terurai. Lebih buruk lagi, plastik yang terbuang ke laut akan dimakan oleh ikan dan kembali ke tubuh manusia melalui rantai makanan.",
+          "Pemerintah kota telah mencoba beberapa solusi: penyuluhan, larangan kantong plastik di pasar modern, dan dukungan bank sampah. Namun, perubahan perilaku masih menjadi tantangan besar.",
+          "Lingkungan bersih tidak cukup hanya dengan aturan. Perlu kesadaran kolektif. Mahasiswa, sebagai agen perubahan, seharusnya menjadi pelopor gaya hidup ramah lingkungan. Mulai dari hal kecil---membawa tumbler, mengurangi kantong plastik, dan mengajak teman memilah sampah."
+        ]
+      },
+      "circ_phases": {
+        "phase_1": {
+          "title": "Aktivasi Konteks",
+          "tasks": [
+            {
+              "question": "Apa jenis sampah terbanyak yang kamu lihat di kampus atau sekitarmu?",
+              "ideal_answer": "Plastik seperti botol air, kemasan makanan, sedotan"
+            },
+            {
+              "question": "Apa dampak plastik terhadap kesehatan atau lingkungan?",
+              "ideal_answer": "Mencemari laut, merusak ekosistem, dan bisa masuk ke tubuh manusia"
+            }
+          ]
+        },
+        "phase_2": {
+          "title": "Membaca Terpadu",
+          "tasks": [
+            {
+              "question": "Tuliskan poin utama setiap paragraf dalam 1 kalimat",
+              "ideal_answers": [
+                "Paragraf 1: Sorong menghadapi masalah besar sampah plastik",
+                "Paragraf 2: Plastik sekali pakai menjadi penyumbang terbesar dan sulit terurai", 
+                "Paragraf 3: Pemerintah sudah berupaya, tapi kesadaran masyarakat masih rendah",
+                "Paragraf 4: Mahasiswa harus jadi bagian dari solusi lingkungan"
+              ]
+            }
+          ]
+        },
+        "phase_3": {
+          "title": "Tinjauan Kritis",
+          "tasks": [
+            {
+              "question": "Apakah artikel ini berdasarkan fakta? Sebutkan contohnya!",
+              "ideal_answer": "Ya, ada data dari DLH tentang jumlah sampah plastik"
+            },
+            {
+              "question": "Menurutmu, apakah pendekatan pemerintah sudah cukup? Mengapa?",
+              "ideal_answer": "Belum cukup---masih perlu gerakan dari masyarakat dan pendidikan publik"
+            },
+            {
+              "question": "Apa peran mahasiswa yang paling mungkin dilakukan secara nyata?",
+              "ideal_answer": "Kampanye lingkungan, membawa wadah sendiri, edukasi di media sosial"
+            }
+          ]
+        },
+        "phase_4": {
+          "title": "Komposisi Reflektif",
+          "tasks": [
+            {
+              "question": "Tuliskan refleksi (2 paragraf): apa yang bisa kamu lakukan sebagai mahasiswa untuk mengurangi sampah plastik?",
+              "ideal_answer": "Saya sadar selama ini saya masih sering pakai plastik tanpa berpikir panjang. Setelah membaca teks ini, saya ingin mulai mengurangi pemakaian botol sekali pakai.\n\nSaya juga ingin mengajak teman-teman di kampus untuk memilah sampah dan membawa tempat makan sendiri. Perubahan kecil bisa berdampak besar jika dilakukan bersama."
+            }
+          ]
+        },
+        "phase_5": {
+          "title": "Diskusi Kolaboratif", 
+          "tasks": [
+            {
+              "instruction": "Unggah refleksi dan tanggapi pendapat minimal 1 teman",
+              "example_response": "Saya suka ide kamu tentang kampanye kampus bebas plastik. Mungkin kita bisa mulai dari kegiatan kuliah lapangan yang bawa tumbler bareng."
+            }
+          ]
+        },
+        "phase_6": {
+          "title": "Presentasi Kritis",
+          "tasks": [
+            {
+              "instruction": "Susun presentasi singkat: Masalah, Dampak, Solusi yang bisa dilakukan mahasiswa",
+              "ideal_answer": {
+                "masalah": "Sampah plastik yang menumpuk di Sorong",
+                "dampak": "Pencemaran lingkungan, kesehatan, dan rantai makanan", 
+                "solusi": "Kurangi plastik sekali pakai, edukasi kampus, dan pemilahan sampah"
+              }
+            }
+          ]
+        }
+      },
+      "final_assessment": {
+        "multiple_choice": [
+          {
+            "question": "Apa penyumbang utama sampah plastik di Sorong?",
+            "options": [
+              "Industri besar",
+              "Alat berat", 
+              "Plastik sekali pakai",
+              "Sampah organik"
+            ],
+            "correct_answer": 2,
+            "explanation": "Teks menyebutkan sebagian besar sampah berasal dari plastik sekali pakai"
+          },
+          {
+            "question": "Mengapa plastik berbahaya?",
+            "options": [
+              "Karena bau",
+              "Karena mahal",
+              "Karena butuh waktu ratusan tahun untuk terurai",
+              "Karena bisa didaur ulang"
+            ],
+            "correct_answer": 2,
+            "explanation": "Plastik butuh waktu ratusan tahun untuk terurai dan mencemari lingkungan"
+          },
+          {
+            "question": "Solusi utama yang ditawarkan penulis adalah...",
+            "options": [
+              "Penutupan pasar",
+              "Daur ulang 100%",
+              "Kesadaran kolektif masyarakat", 
+              "Pemakaian lebih banyak plastik"
+            ],
+            "correct_answer": 2,
+            "explanation": "Penulis menekankan pentingnya kesadaran kolektif dalam mengatasi sampah plastik"
+          }
+        ],
+        "reflection_questions": [
+          {
+            "question": "Seberapa besar tanggung jawab pribadi kita dalam isu sampah plastik?",
+            "ideal_answer": "Saya rasa tanggung jawab pribadi sangat besar. Jika semua orang mengubah sedikit kebiasaannya, hasilnya bisa luar biasa."
+          },
+          {
+            "question": "Apakah kamu pernah ikut kegiatan lingkungan? Apa yang bisa ditingkatkan?",
+            "ideal_answer": "Saya pernah ikut bersih pantai, tapi kegiatan itu sebaiknya rutin dan disertai edukasi."
+          },
+          {
+            "question": "Jika kamu jadi pembuat kebijakan, aturan apa yang akan kamu buat?",
+            "ideal_answer": "Jika saya pembuat kebijakan, saya akan mewajibkan semua kampus memiliki sistem pemilahan sampah yang aktif dan diawasi."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ilmiah_populer_2",
+      "type": "ilmiah_populer",
+      "title": "Suara Guru Papua tentang Pendidikan Multikultural di Sekolah Dasar",
+      "learning_objectives": [
+        "Mahasiswa memahami makna dan urgensi pendidikan multikultural",
+        "Mahasiswa dapat menganalisis hasil penelitian dalam bentuk teks ilmiah populer",
+        "Mahasiswa mampu menyusun refleksi kritis dan menyampaikan gagasan solutif"
+      ],
+      "text_content": {
+        "title": "Suara Guru Papua tentang Pendidikan Multikultural di Sekolah Dasar",
+        "paragraphs": [
+          "Kabupaten Sorong, Papua Barat Daya, dikenal sebagai wilayah yang kaya budaya dan suku bangsa. Di satu kelas, seorang guru bisa mendidik siswa dari berbagai latar belakang: suku Moi, Bugis, Toraja, bahkan pendatang dari Jawa dan Ambon. Situasi ini menantang guru untuk menciptakan pembelajaran yang inklusif, adil, dan menghargai perbedaan.",
+          "Sebuah studi kualitatif yang dilakukan di SD Inpres 17 Kabupaten Sorong menunjukkan bahwa sebagian besar guru memiliki pemahaman positif terhadap pendidikan multikultural. Guru menyadari pentingnya memperlakukan semua siswa secara setara tanpa memandang latar belakang suku, agama, atau bahasa.",
+          "Dalam wawancara, seorang guru mengatakan, \"Kami tidak bisa pilih kasih. Anak-anak datang dari banyak kampung dan rumah, tapi di kelas, mereka satu keluarga.\" Guru juga menyebutkan bahwa pendekatan pengajaran berbasis cerita rakyat lokal dan diskusi lintas budaya membantu memperkuat toleransi siswa.",
+          "Namun, tantangan tetap ada. Beberapa guru belum memiliki pelatihan khusus, dan belum semua buku teks mencerminkan keragaman Papua. Selain itu, konflik kecil antar siswa karena perbedaan masih sering terjadi.",
+          "Penelitian ini menyimpulkan bahwa pendidikan multikultural harus dimulai dari guru yang reflektif dan terbuka. Mahasiswa calon guru perlu dibekali sejak awal dengan pengetahuan dan praktik multikultural agar bisa menjadi agen perdamaian di ruang kelas."
+        ]
+      },
+      "circ_phases": {
+        "phase_1": {
+          "title": "Aktivasi Konteks",
+          "tasks": [
+            {
+              "question": "Pernahkah kamu mengalami atau menyaksikan perbedaan budaya di ruang belajar?",
+              "ideal_answer": "Ya, misalnya saat diskusi ada perbedaan bahasa atau pendapat karena latar budaya"
+            },
+            {
+              "question": "Apa dampaknya terhadap interaksi siswa?",
+              "ideal_answer": "Bisa memperkaya perspektif tapi juga memicu kesalahpahaman jika tak dikelola"
+            }
+          ]
+        },
+        "phase_2": {
+          "title": "Membaca Terpadu",
+          "tasks": [
+            {
+              "question": "Tentukan gagasan utama tiap paragraf",
+              "ideal_answers": [
+                "Paragraf 1: Guru di Sorong mengajar dalam keragaman budaya",
+                "Paragraf 2: Guru memiliki sikap positif terhadap pendidikan multikultural",
+                "Paragraf 3: Guru menggunakan pendekatan lokal untuk menumbuhkan toleransi", 
+                "Paragraf 4: Tantangan masih ada: pelatihan dan konflik antar siswa",
+                "Paragraf 5: Mahasiswa calon guru perlu disiapkan menjadi guru multikultural"
+              ]
+            }
+          ]
+        },
+        "phase_3": {
+          "title": "Tinjauan Kritis",
+          "tasks": [
+            {
+              "question": "Apa kekuatan utama dari para guru di SD Inpres 17?",
+              "ideal_answer": "Empati dan pendekatan humanis dalam mengajar siswa dari latar belakang berbeda"
+            },
+            {
+              "question": "Apa kekurangan yang ditemukan dari implementasi pendidikan multikultural?",
+              "ideal_answer": "Minim pelatihan, buku teks belum multikultural, konflik kecil masih terjadi"
+            },
+            {
+              "question": "Bagaimana calon guru bisa mempersiapkan diri?",
+              "ideal_answer": "Belajar lintas budaya, refleksi diri, dan latihan metode inklusif"
+            }
+          ]
+        },
+        "phase_4": {
+          "title": "Komposisi Reflektif",
+          "tasks": [
+            {
+              "question": "Tuliskan refleksi (2 paragraf): mengapa pendidikan multikultural penting untuk Papua dan apa peran mahasiswa sebagai calon guru?",
+              "ideal_answer": "Papua adalah wilayah yang sangat beragam, sehingga penting untuk memastikan setiap anak merasa diterima dan dihargai. Pendidikan multikultural membantu mencegah diskriminasi dan menumbuhkan rasa persatuan.\n\nSebagai calon guru, saya harus belajar mengelola keragaman di kelas, mengenali potensi konflik, dan mengembangkan strategi pembelajaran yang merangkul semua siswa tanpa membedakan."
+            }
+          ]
+        },
+        "phase_5": {
+          "title": "Diskusi Kolaboratif",
+          "tasks": [
+            {
+              "instruction": "Unggah refleksi dan tanggapi refleksi minimal 1 teman",
+              "example_response": "Saya setuju dengan kamu. Menurut saya, kisah lokal dan budaya setempat juga penting untuk dijadikan materi pembelajaran agar siswa merasa memiliki ruang di kelas."
+            }
+          ]
+        },
+        "phase_6": {
+          "title": "Presentasi Kritis",
+          "tasks": [
+            {
+              "instruction": "Buat presentasi tentang: Realita pendidikan multikultural di Sorong, Temuan utama penelitian, Usulan solusi mahasiswa",
+              "ideal_answer": {
+                "realita": "Guru menghadapi kelas yang multikultur",
+                "temuan": "Guru punya sikap baik, tapi butuh pelatihan dan dukungan",
+                "solusi": "Pendidikan guru berbasis multikultural, kurikulum kontekstual, pelatihan berkelanjutan"
+              }
+            }
+          ]
+        }
+      },
+      "final_assessment": {
+        "multiple_choice": [
+          {
+            "question": "Apa yang menjadi tantangan utama guru dalam pembelajaran multikultural di Sorong?",
+            "options": [
+              "Kekurangan siswa",
+              "Perbedaan waktu sekolah",
+              "Belum adanya pelatihan khusus",
+              "Banyak guru absen"
+            ],
+            "correct_answer": 2,
+            "explanation": "Teks menyebutkan beberapa guru belum memiliki pelatihan khusus"
+          },
+          {
+            "question": "Cara guru membangun toleransi antar siswa:",
+            "options": [
+              "Dengan ulangan setiap hari",
+              "Dengan larangan berbicara bahasa daerah",
+              "Dengan cerita rakyat dan diskusi lintas budaya",
+              "Dengan seragam khusus"
+            ],
+            "correct_answer": 2,
+            "explanation": "Guru menggunakan cerita rakyat lokal dan diskusi lintas budaya"
+          },
+          {
+            "question": "Mengapa mahasiswa perlu memahami pendidikan multikultural?",
+            "options": [
+              "Untuk menulis skripsi",
+              "Agar bisa jadi dosen",
+              "Untuk menjadi agen perdamaian dan keadilan di ruang kelas",
+              "Agar bisa pindah jurusan"
+            ],
+            "correct_answer": 2,
+            "explanation": "Mahasiswa calon guru perlu menjadi agen perdamaian di ruang kelas"
+          }
+        ],
+        "reflection_questions": [
+          {
+            "question": "Apa pengalamanmu yang paling berkesan terkait keragaman di kelas atau lingkungan kampus?",
+            "ideal_answer": "Saya pernah dalam satu kelompok dengan teman dari tiga suku berbeda. Awalnya bingung, tapi akhirnya jadi saling belajar."
+          },
+          {
+            "question": "Menurutmu, bagaimana kurikulum guru bisa lebih sensitif terhadap keragaman?",
+            "ideal_answer": "Kurikulum sebaiknya banyak menampilkan teks dari berbagai budaya lokal agar siswa merasa terwakili."
+          },
+          {
+            "question": "Apakah kamu siap menjadi guru multikultural? Mengapa?",
+            "ideal_answer": "Saya siap menjadi guru multikultural karena saya percaya pendidikan adalah jembatan antarmanusia, bukan pemisah."
+          }
+        ]
+      }
+    }
+  ]
+}
