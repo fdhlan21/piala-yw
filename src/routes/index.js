@@ -150,6 +150,14 @@ export default function Router() {
       />
 
        <Stack.Screen
+        name="TentangAplikasi"
+        component={TentangAplikasi}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+       <Stack.Screen
         name="Eksposisi"
         component={Eksposisi}
         options={{

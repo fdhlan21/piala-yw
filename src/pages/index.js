@@ -54,6 +54,7 @@ import SastraKontekstual from './ModulLiterasi/sastra';
 import IlmiahPopuler from './ModulLiterasi/IlmiahPopuler';
 import LatihanRefleksi from './LatihanRefleksi';
 import ForumDiskusi from './forumdiskusi';
+import TentangAplikasi from './TentangAplikasi';
 
 
 // NEW
@@ -115,5 +116,11 @@ SastraKontekstual,
 IlmiahPopuler,
 LatihanRefleksi,
 ForumDiskusi,
+TentangAplikasi,
+
+
+
+
+
 
 };

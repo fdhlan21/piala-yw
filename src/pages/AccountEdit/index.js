@@ -4,164 +4,196 @@ import {
   Text,
   View,
   SafeAreaView,
-  Image,
-  Linking,
   Alert,
-  ActivityIndicator,
   ScrollView,
 } from 'react-native';
-import {windowWidth, fonts} from '../../utils/fonts';
+import {fonts} from '../../utils/fonts';
 import {
-  apiURL,
-  getData,
   MYAPP,
   storeData,
-  urlAPI,
-  urlApp,
-  urlAvatar,
 } from '../../utils/localStorage';
-import {Color, colors} from '../../utils/colors';
+import {colors} from '../../utils/colors';
 import {
   MyButton,
-  MyCalendar,
   MyGap,
   MyHeader,
   MyInput,
-  MyPicker,
 } from '../../components';
-import {Icon} from 'react-native-elements';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import {useIsFocused} from '@react-navigation/native';
-import axios from 'axios';
-import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
-import moment from 'moment';
-import SweetAlert from 'react-native-sweet-alert';
-import MyLoading from '../../components/MyLoading';
 import {useToast} from 'react-native-toast-notifications';
 
 export default function AccountEdit({navigation, route}) {
-  const [kirim, setKirim] = useState(route.params);
+  const [kirim, setKirim] = useState({
+    nama: '',
+    nim: '',
+    asal_perguruan_tinggi: ''
+  });
   const [loading, setLoading] = useState(false);
   const toast = useToast();
-  const sendServer = () => {
-    setLoading(true);
-    console.log(kirim);
-    axios.post(apiURL + 'update_profile', kirim).then(res => {
-      console.log(res.data);
-
-      setLoading(false);
-
-      if (res.data.status == 200) {
-        storeData('user', res.data.data);
-        navigation.replace('MainApp');
-        toast.show(res.data.message, {
-          type: 'success',
-        });
-      }
-    });
-  };
 
   useEffect(() => {
-    setKirim({
-      ...kirim,
-      newfoto_user: null,
-    });
-  }, []);
+    // Mengambil data dari route params atau set dummy data
+    if (route.params) {
+      setKirim({
+        nama: route.params.nama || '',
+        nim: route.params.nim || '',
+        asal_perguruan_tinggi: route.params.asal_perguruan_tinggi || ''
+      });
+    } else {
+      // Fallback dummy data
+      setKirim({
+        nama: 'Yeni Witdianti',
+        nim: '20230001',
+        asal_perguruan_tinggi: 'Universitas Papua Barat Daya'
+      });
+    }
+  }, [route.params]);
+
+  const handleSave = () => {
+    // Validasi input
+    if (!kirim.nama.trim()) {
+      Alert.alert(MYAPP, 'Nama tidak boleh kosong');
+      return;
+    }
+    
+    if (!kirim.nim.trim()) {
+      Alert.alert(MYAPP, 'NIM tidak boleh kosong');
+      return;
+    }
+    
+    if (!kirim.asal_perguruan_tinggi.trim()) {
+      Alert.alert(MYAPP, 'Asal perguruan tinggi tidak boleh kosong');
+      return;
+    }
+
+    setLoading(true);
+    
+    // Simulasi proses save
+    setTimeout(() => {
+      setLoading(false);
+      
+      // Simpan dummy data ke local storage (jika diperlukan)
+      const updatedUser = {
+        nama: kirim.nama,
+        nim: kirim.nim,
+        asal_perguruan_tinggi: kirim.asal_perguruan_tinggi
+      };
+      
+      storeData('user', updatedUser);
+      
+      // Tampilkan toast sukses
+      toast.show('Profil berhasil diperbarui!', {
+        type: 'success',
+      });
+      
+      // Kembali ke halaman sebelumnya
+      navigation.goBack();
+    }, 1500);
+  };
 
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        backgroundColor: colors.white,
-      }}>
+    <SafeAreaView style={styles.container}>
       <MyHeader title="Edit Profile" onPress={() => navigation.goBack()} />
       <ScrollView
         showsVerticalScrollIndicator={false}
-        style={{
-          paddingHorizontal: 20,
-        }}>
-        {/* <View style={{
-                    padding: 10,
-                    justifyContent: 'center',
-                    alignItems: 'center'
-                }}>
-                    <TouchableOpacity onPress={() => {
-
-
-                        launchImageLibrary({
-                            includeBase64: true,
-                            quality: 1,
-                            mediaType: "photo",
-                            maxWidth: 200,
-                            maxHeight: 200
-                        }, response => {
-                            // console.log('All Response = ', response);
-
-                            setKirim({
-                                ...kirim,
-                                newfoto_user: `data:${response.type};base64, ${response.base64}`,
-                            });
-                        });
-
-
-
-                    }} style={{
-                        width: 100,
-                        height: 100,
-                        borderWidth: 1,
-                        borderColor: Color.blueGray[100],
-                        overflow: 'hidden',
-                        borderRadius: 20,
-                        justifyContent: 'center',
-                        alignItems: 'center'
-                    }}>
-                        <Image style={{
-                            width: 100,
-                            height: 100,
-                        }} source={{
-                            uri: kirim.newfoto_user !== null ? kirim.newfoto_user : kirim.foto_user,
-                        }} />
-                    </TouchableOpacity>
-                </View> */}
-
-        <MyInput
-          label="Username"
-          iconname="at-outline"
-          value={kirim.username}
-          onChangeText={x => setKirim({...kirim, username: x})}
-        />
+        style={styles.scrollView}>
+        
+        <View style={styles.formContainer}>
+          <Text style={styles.formTitle}>Edit Informasi Profil</Text>
+          <Text style={styles.formSubtitle}>
+            Perbarui informasi profil Anda di bawah ini
+          </Text>
+        </View>
 
         <MyInput
           label="Nama Lengkap"
           iconname="person-outline"
-          value={kirim.nama_lengkap}
-          onChangeText={x => setKirim({...kirim, nama_lengkap: x})}
+          value={kirim.nama}
+          onChangeText={x => setKirim({...kirim, nama: x})}
+          placeholder="Masukkan nama lengkap"
         />
 
         <MyInput
-          label="Password"
-          iconname="lock-closed-outline"
-          secureTextEntry={true}
-          onChangeText={x => setKirim({...kirim, newpassword: x})}
-          placeholder="Kosongkan jika tidak diubah"
+          label="NIM (Nomor Induk Mahasiswa)"
+          iconname="card-outline"
+          value={kirim.nim}
+          onChangeText={x => setKirim({...kirim, nim: x})}
+          placeholder="Masukkan NIM"
+          keyboardType="numeric"
         />
-        <MyGap jarak={20} />
-        {loading && <MyLoading />}
 
-        {!loading && (
+        <MyInput
+          label="Asal Perguruan Tinggi"
+          iconname="school-outline"
+          value={kirim.asal_perguruan_tinggi}
+          onChangeText={x => setKirim({...kirim, asal_perguruan_tinggi: x})}
+          placeholder="Masukkan asal perguruan tinggi"
+        />
+
+        <MyGap jarak={30} />
+
+        {loading ? (
+          <View style={styles.loadingContainer}>
+            <Text style={styles.loadingText}>Menyimpan perubahan...</Text>
+          </View>
+        ) : (
           <MyButton
-            warna={colors.secondary}
+            warna={colors.primary}
             colorText={colors.white}
             iconColor={colors.white}
-            onPress={sendServer}
+            onPress={handleSave}
             title="Simpan Perubahan"
-            Icons="download-outline"
+            Icons="save-outline"
           />
         )}
+        
         <MyGap jarak={20} />
       </ScrollView>
     </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: colors.white,
+  },
+  scrollView: {
+    paddingHorizontal: 20,
+  },
+  formContainer: {
+    backgroundColor: colors.primary,
+    borderRadius: 15,
+    padding: 20,
+    marginTop: 10,
+    marginBottom: 25,
+    alignItems: 'center',
+  },
+  formTitle: {
+    fontSize: 18,
+    fontFamily: fonts.primary[700],
+    color: colors.white,
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+  formSubtitle: {
+    fontSize: 14,
+    fontFamily: fonts.primary[400],
+    color: colors.white,
+    textAlign: 'center',
+    opacity: 0.9,
+    lineHeight: 20,
+  },
+  loadingContainer: {
+    backgroundColor: '#f8f9fa',
+    borderRadius: 15,
+    padding: 20,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: colors.primary,
+  },
+  loadingText: {
+    fontSize: 16,
+    fontFamily: fonts.primary[500],
+    color: colors.primary,
+  },
+});
